@@ -1,19 +1,31 @@
 plugins {
     id 'java'
-    id 'application'
+    id 'jacoco'
 }
-
-group = 'com.jetuml'
-version = '1.0.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
-application {
-    mainClassName = 'ca.prmr.JetUML.JetUML'
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport 
 }
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.11" 
+}
+
