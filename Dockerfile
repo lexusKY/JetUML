@@ -15,7 +15,7 @@ RUN wget https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_linux-x64_b
 WORKDIR /app
 
 # Copy your JAR
-COPY JetUML-3.8.jar .
+COPY JetUML-1.0.0.jar .
 
 # Launch JetUML with JavaFX
-CMD ["java", "--module-path", "/opt/javafx-sdk-21.0.2/lib", "--add-modules", "javafx.controls,javafx.fxml", "-jar", "JetUML-3.8.jar"]
+CMD ["java", "--module-path", "/opt/javafx-sdk-21.0.2/lib", "--add-modules", "javafx.controls,javafx.fxml", "-jar", "JetUML-1.0.0.jar"]
