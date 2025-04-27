@@ -16,10 +16,11 @@ dependencies {
 }
 
 application {
-    mainClassName = 'ca.prmr.JetUML.JetUML'
+    mainClass = 'ca.prmr.JetUML.JetUML'
 }
 
 jacocoTestReport {
+    dependsOn test
     reports {
         xml.required = true
         html.required = true
