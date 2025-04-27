@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'jacoco'
 }
 
 group = 'com.jetuml'
@@ -16,4 +17,11 @@ dependencies {
 
 application {
     mainClassName = 'ca.prmr.JetUML.JetUML'
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+        html.required = true
+    }
 }
