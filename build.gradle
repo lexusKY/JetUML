@@ -12,17 +12,28 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
     testImplementation 'junit:junit:4.13.2'
+
+
 }
 
 application {
     mainClass = 'ca.prmr.JetUML.JetUML'
 }
 
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
 jacocoTestReport {
     dependsOn test
     reports {
-        xml.required = true
-        html.required = true
+        xml.required.set(true)
+        html.required.set(true)
     }
 }
