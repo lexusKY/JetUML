@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.jetuml.UmlDiagramTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-28T04:50:50" hostname="LAPTOP-BGA91KFB" time="0.037">
+<testsuite name="org.jetuml.UmlDiagramTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-28T07:29:07" hostname="LAPTOP-PG6VJIVI" time="0.056">
   <properties/>
-  <testcase name="testSimpleMath()" classname="org.jetuml.UmlDiagramTest" time="0.03"/>
-  <testcase name="testStringEquals()" classname="org.jetuml.UmlDiagramTest" time="0.003"/>
-  <testcase name="testListSize()" classname="org.jetuml.UmlDiagramTest" time="0.001"/>
+  <testcase name="testSimpleMath()" classname="org.jetuml.UmlDiagramTest" time="0.044"/>
+  <testcase name="testStringEquals()" classname="org.jetuml.UmlDiagramTest" time="0.007"/>
+  <testcase name="testListSize()" classname="org.jetuml.UmlDiagramTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
